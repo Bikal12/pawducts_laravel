@@ -14,10 +14,11 @@ class CheckOutController extends Controller
         $checkoutitem->first_name = $req->input('first_name');
         $checkoutitem->last_name = $req->input('last_name');
         $checkoutitem->address = $req->input('address');
-        $checkoutitem->phone_no = $req->input('phone_no');
-        $checkoutitem->email = $req->input('price');
-        $checkoutitem->email = $req->input('productname');
-        $checkoutitem->email = $req->input('quantity');
+        $checkoutitem->phone_no = $req->input('phone_no'); 
+        $checkoutitem->email = $req->input('email');
+        $checkoutitem->price = $req->input('price');
+        $checkoutitem->productname = $req->input('productname');
+        $checkoutitem->quantity = $req->input('quantity');
         $checkoutitem->save();
         return $checkoutitem;
     }
