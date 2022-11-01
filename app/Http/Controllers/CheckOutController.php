@@ -16,9 +16,7 @@ class CheckOutController extends Controller
         $checkoutitem->address = $req->input('address');
         $checkoutitem->phone_no = $req->input('phone_no'); 
         $checkoutitem->email = $req->input('email');
-        $checkoutitem->price = $req->input('price');
-        $checkoutitem->productname = $req->input('productname');
-        $checkoutitem->quantity = $req->input('quantity');
+        $checkoutitem->purchaseOrder = $req->input('purchaseOrder');
         $checkoutitem->save();
         return $checkoutitem;
     }
