@@ -23,6 +23,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::post('register', [UserController::class,'register']);
-Route::post('addprod',[ProductController::class,'addProd']);
+Route::post('addprod',[ProductController::class,'AddProd']);
 Route::post('cart',[CheckOutController::class,'checkOut']);
 
